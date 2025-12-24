@@ -31,7 +31,7 @@ Projenizi yerel ortamda çalıştırmak için şu adımları izleyin:
 
 1.  **Projeyi klonlayın:**
     ```bash
-    git clone [https://github.com/kullanici_adiniz/UCUS-API-AUTOMATION.git](https://github.com/kullanici_adiniz/UCUS-API-AUTOMATION.git)
+    git clone [https://github.com/kullanici_adiniz/UCUS-API-AUTOMATION.git](https://github.com/Burakk74/UCUS-API-AUTOMATION.git)
     cd UCUS-API-AUTOMATION
     ```
 
@@ -89,7 +89,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your_username/UCUS-API-AUTOMATION.git](https://github.com/your_username/UCUS-API-AUTOMATION.git)
+    git clone [https://github.com/your_username/UCUS-API-AUTOMATION.git](https://github.com/Burakk74/UCUS-API-AUTOMATION.git)
     cd UCUS-API-AUTOMATION
     ```
 
