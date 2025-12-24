@@ -32,4 +32,8 @@ class FlightAPIClient:
     
 
 
-
+    def get_invalid_endpoint(self):
+        """Request to an invalid endpoint."""
+        # 'states/all' we use invalid path here
+        response = httpx.get(f"{self.base_url}/wrong/path", headers=self.headers)
+        return response

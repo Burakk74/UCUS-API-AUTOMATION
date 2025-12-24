@@ -47,3 +47,17 @@ def test_flight_data_structure(api_client):
     else:
         pytest.skip("No flight data available to test.")
     
+
+
+    def test_get_flights_with_invalid_endpoint(api_client):
+        """
+        Negative scenario: When an invalid endpoint is requested, a 404 error should be returned.
+        """
+        # 1. Request to invalid endpoint
+        response = api_client.get_invalid_endpoint()
+        
+        # 2. Assert: Check that the status code is 404
+        assert response.status_code == 404, f"Expected 404, but got {response.status_code}!"
+
+        # Optional: Check the error message content (if API supports it)
+        print(f"\nError message returned by server: {response.text}")
