@@ -1,0 +1,35 @@
+import httpx
+
+
+class FlightAPIClient:
+    def __init__(self):
+        # Main address for the API)
+        self.base_url ="https://opensky-network.org/api"
+
+
+        #Headers that will be common to all requests (JSON data type)
+        self.headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }
+
+
+    def get_flights(self):
+        """Fetch a list of flights from the API."""
+        url = f"{self.base_url}/states/all"
+        response = httpx.get(url, headers=self.headers)
+        
+        return response
+    
+
+    def get_flight_details(self, flight_id):
+        """Fetch details of a specific flight by ID."""
+        response = httpx.get(
+            f"{self.base_url}/flights/{flight_id}",
+            headers=self.headers)
+        
+        return response
+    
+
+
+
