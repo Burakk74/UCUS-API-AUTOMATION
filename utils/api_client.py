@@ -37,3 +37,17 @@ class FlightAPIClient:
         # 'states/all' we use invalid path here
         response = httpx.get(f"{self.base_url}/wrong/path", headers=self.headers)
         return response
+
+
+    def get_flights_by_coords(self, lamin, lomin, lamax, lomax):
+        """Fetch flights within specified geographic coordinates."""
+
+        params = {
+            "lamin": lamin,
+            "lomin": lomin,
+            "lamax": lamax,
+            "lomax": lomax
+        }
+
+        response = httpx.get(f"{self.base_url}/states/all", params=params, headers=self.headers)
+        return response

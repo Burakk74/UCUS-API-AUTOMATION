@@ -23,7 +23,7 @@ Framework, kodun tekrar kullanılabilirliğini (reusability) ve kolay bakımın�
 
 1.  **Pozitif Test (Happy Path):** Canlı uçuş listesinin başarıyla (HTTP 200) çekilmesi ve veri yapısının doğrulanması.
 2.  **Negatif Test (Error Handling):** Geçersiz bir endpoint'e istek atıldığında sistemin doğru hata kodunu (HTTP 404) döndüğünün doğrulanması.
-3.  **Veri Validasyonu:** Dönen JSON paketindeki zorunlu alanların (states, flight IDs vb.) kontrolü.
+3.  **Veri Validasyonu:** Dönen JSON paketindeki zorunlu alanların  kontrolü.
 
 ## 🚀 Kurulum ve Çalıştırma
 
@@ -81,7 +81,7 @@ The framework follows a 3-layered structure to promote reusability and maintaina
 
 1.  **Positive Test (Happy Path):** Validating the successful retrieval (HTTP 200) of the live flight list.
 2.  **Negative Test (Error Handling):** Verifying that the system correctly returns an error code (HTTP 404) when an invalid endpoint is requested.
-3.  **Data Validation:** Ensuring that the JSON response body contains mandatory fields (such as 'states' and flight attributes).
+3.  **Data Validation:** Ensuring that the JSON response body contains mandatory fields .
 
 ## 🚀 Setup and Execution
 
